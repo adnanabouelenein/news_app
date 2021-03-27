@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="general_news">General News</string>
+    <string name="sport_news">Sport News</string>
+    <string name="refresh">Refresh</string>
+    <string name="entertainment_news">Entertainment News</string>
+    <string name="health_news">Health News</string>
+    <string name="science_news">Science News</string>
+    <string name="technology_news">Technology News</string>
+    <string name="business_news">Business News</string>
+</resources>

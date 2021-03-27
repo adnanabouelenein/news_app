@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/general_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_16_dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/space_16_dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="openGeneralNews"
+        android:text="@string/general_news"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sport_news"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8_dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="openSportNews"
+        android:text="@string/sport_news"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/entertainment_news"
+        app:layout_constraintStart_toStartOf="@id/general_news"
+        app:layout_constraintTop_toBottomOf="@id/general_news" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/entertainment_news"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8_dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="openEntertainmentNews"
+        android:text="@string/entertainment_news"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/general_news"
+        app:layout_constraintStart_toEndOf="@id/sport_news"
+        app:layout_constraintTop_toBottomOf="@id/general_news" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/health_news"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8_dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="openHealthNews"
+        android:text="@string/health_news"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/science_news"
+        app:layout_constraintStart_toStartOf="@id/general_news"
+        app:layout_constraintTop_toBottomOf="@id/sport_news" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/science_news"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8_dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="openScienceNews"
+        android:text="@string/science_news"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/entertainment_news"
+        app:layout_constraintStart_toEndOf="@id/health_news"
+        app:layout_constraintTop_toBottomOf="@id/entertainment_news" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/technology_news"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8_dp"
+        android:layout_marginEnd="@dimen/space_8_dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="openTechnologyNews"
+        android:text="@string/technology_news"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/business_news"
+        app:layout_constraintStart_toStartOf="@id/general_news"
+        app:layout_constraintTop_toBottomOf="@id/health_news" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/business_news"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8_dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="openBusinessNews"
+        android:text="@string/business_news"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/general_news"
+        app:layout_constraintStart_toEndOf="@id/technology_news"
+        app:layout_constraintTop_toBottomOf="@id/science_news" />
+</androidx.constraintlayout.widget.ConstraintLayout>
